@@ -17,11 +17,11 @@ public class PROG_Boletin_8_9 {
         Scanner scan = new Scanner(System.in);
         int suma=0;
         
-        while(suma<100){
+        for(int i =1;i<=6;i++){
+            System.out.println("Inserta nota "+i+": ");
             suma += scan.nextInt();
-        System.out.println("suma: " + suma);
-        }
-        
+        }        
+        System.out.println("media: " + (suma/6));        
     }
     
 }

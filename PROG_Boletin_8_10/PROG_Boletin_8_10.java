@@ -12,20 +12,16 @@ import java.util.Scanner;
  * @author fsancheztemprano
  */
 public class PROG_Boletin_8_10 {
-
     public static void main(String[] args) {
-
+        
         Scanner scan = new Scanner(System.in);
-        for (int j = 1; j <= 3; j++) {
-            System.out.println("Alumno " + j + ": ");
-            int suma = 0;
-
-            for (int i = 1; i <= 6; i++) {
-                System.out.println("Inserta nota " + i + ": ");
-                suma += scan.nextInt();
-            }
-
-            System.out.println("Alumno "+j+": Nota media: " + (suma / 6));
-        }
+        int suma=0;
+        
+        for(int i =1;i<=6;i++){
+            System.out.println("Inserta nota "+i+": ");
+            suma += scan.nextInt();
+        }        
+        System.out.println("media: " + (suma/6));        
     }
+    
 }
